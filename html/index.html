@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="../styles/image.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/all.css">
+    <link rel="stylesheet" href="../styles/slider.css">
+    <link rel="stylesheet" href="../styles/countdown.css">
+    <link rel="stylesheet" href="../styles/background.css"></link>
+    <script src="../script/slider.js"></script>
+    <script src="../script/transition.js"></script>
+    <script src="../script/countdown.js"></script>
+    <script src="../script/menu.js"></script>
+    <script src="../script/html5.js"></script>
+</head>
+
+<body onload="checkHTML5Support()">
+        <header>
+          <h1>Ласкаво просимо в наш зоопарк</h1>
+          <img src="../source/zoo.png" alt="Іконка зоопарку" width="128px" height="128px">
+        </header>
+        <nav>
+          <a href="index.html">Головна</a>
+          <div class="dropdown">
+            <a href="tickets.html" id="ticket">Квитки</a>
+            <div id="list" class="dropdown-content">
+              <a href="guardians.html">Опікуни</a>
+              <a href="support.html">Допомога</a>
+            </div> 
+          </div>
+          <a href="gallery.html">Зображення</a>
+          <a href="oceanarium.html">Океанаріум</a>
+          <a href="support.html">Допомога зоопарку</a>
+          <a href="guardians.html">Опікуни</a>
+          <a href="blog.html">Блог</a>
+        </nav>
+        <div class="image-container">
+
+            <div class="slider">
+                <div class="gallery">
+                <ul>
+                    <li>
+                    <img src="../source/slider-image-1.png" alt="Фото 1" width="128" height="128" class="gallery-image">
+                    </li>
+                    <li>
+                    <img src="../source/slider-image-2.png" alt="Фото 2" width="128" height="128"class="gallery-image" >
+                    </li>
+                    <li>
+                    <img src="../source/slider-image-3.png" alt="Фото 3" width="128" height="128" class="gallery-image">
+                    </li>
+                    <li>
+                    <img src="../source/slider-image-4.png" alt="Фото 4" width="128" height="128" class="gallery-image">
+                    </li>
+                    <li>
+                    <img src="../source/slider-image-5.png"  alt="Фото 5" width="128" height="128" class="gallery-image">
+                    </li>
+                    <li>
+                    <img src="../source/slider-image-6.png"  alt="Фото 6" width="128" height="128"class="gallery-image">
+                    </li>
+                </ul>
+                </div>
+                <button class="prev"><</button>
+                <button class="next">></button>
+            </div>
+        </div>
+        <canvas id="newYearCountdown" class="countdown" width="1000" height="100"></canvas>
+        <script src="../script/countdown.js"></script>
+    <div class="overlay" id="overlay">
+        <div class="image-viewer" id="imageViewer">
+            <img src="" alt="Велике зображення" id="largeImage">
+            <button id="closeButton" class="close-button">✕</button>
+        </div>
+    </div>
+    <svg height="200" width="200" style=" display:block; margin: 0 auto;">
+      <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lemonchiffon;stroke:rgb(0, 92, 128);stroke-width:5;fill-rule:evenodd;"/>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+    <p id="supportText"></p>
+    <form id="search-bar" action="http://www.google.com/search" target="_blank">
+      <p><input type="search" name="q" placeholder="Введіть свій запит" required>
+      <br>
+      <input type="submit" value="Google пошук"></p>
+    </form>
+    
+    <script src="../script/gallery.js"></script>
+</body>
+</html>

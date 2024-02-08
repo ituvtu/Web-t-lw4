@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Реєстрація</title>
+    <script src="../script/validation.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/all.css">
+    <script src="../script/transition.js"></script>
+    
+</head>
+<body>
+    <h1>Реєстрація на розсилку</h1>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="tickets.html">Замовити квитки</a>
+        <a href="gallery.html">Зображення</a>
+        <a href="oceanarium.html">Океанаріум</a>
+        <a href="support.html">Допомога зоопарку</a>
+        <a href="guardians.html">Опікуни</a>
+        <a href="blog.html">Блог</a>
+    </nav>
+    <form id="email">
+        <label for="email">Електронна пошта</label>
+        <input id="emailAddress" type="email" size="64" maxLength="64"
+            required
+            placeholder="username@example.com"
+            pattern=".+@example.com"
+            title="Please provide only a valid e-mail address">
+    </form>
+    <form id="phoneForm">
+        <label for="phone">Номер телефону *у форматі +3800000000000:</label>
+        <input type="text" id="phone" autocomplete="off">
+        <button type="button" id ="validatePhone">Валідація телефон, JS</button>
+        
+    </form>
+    <button id="validateEmail" type="button">Перевірка електронної пошти</button>
+    <button id="submitForm" type="button">Відправити</button></br>
+   <canvas id="myCanvas" width="auto" height="auto" style="border:3px solid rgb(0, 4, 255);"></canvas>
+   <script src="../script/canvas.js"></script>
+</body>
+</html>
